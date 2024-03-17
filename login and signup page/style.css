@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: url(assets/image/images\ \(2\).jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a {
+    padding: 14px 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav span {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 65vw;
+    font-size: 45px;
+    display: flex;
+    justify-content: flex-start;
+    /* font-family: sans-serif; */
+    align-items: center;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+form {
+    margin-top: 5vh;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70vw;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 15%;
+    color: rgb(0, 0, 0);
+    border: 4px solid black;
+    position: relative;
+}
+
+/* form img{
+    width: 45vw;
+    height: 75vh;
+} */
+
+.img-word {
+    color: #f7f7f7;
+    font-family: emoji;
+    font-size: 40px;
+    margin: 0px 20px;
+}
+
+.img-box {
+    border-radius: 12px;
+    width: 40vw;
+    height: 480px;
+    background-image: url(assets/image/images\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 30px;
+    border: 4px solid black;
+}
+.info{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 30px
+}
+.scheme{
+    color: rgb(160, 160, 160);
+    margin:5px 30px 0px 20px;
+}
+.form-start-container {
+    width: 30vw;
+    border-radius: 8px;
+    height: 500px;
+    position: relative;
+    /* border: 2px solid rgb(255, 9, 9); */
+   text-align: center;
+}
+
+.form-welcome {
+    color: black;
+    margin-top: 10%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.form-welcome h3{
+    font-family: emoji;
+}
+.form-welcome h4{
+    font-family: emoji;
+    margin: 10px 0px;
+}
+.input-of-form{
+    width: 30vw;
+    height: 400px;
+    margin-bottom: 50%;
+    /* border-radius: 8px; */
+    /* background-color: #ffb0fb; */
+    text-align: center;
+}
+
+.name{
+    margin-right: 70%;
+    margin-top: 10px;
+}
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.password-container {
+    position: relative;
+}
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius:8px;
+    cursor: pointer;
+    width: 92%;
+}
+input[type="submit"]:hover {
+    background-color: #454ea0;
+}
+.additional-links {
+    margin: 10px 10px;
+    text-align: center;
+}
+.additional-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+button{
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding: 9px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    margin-left: 10%;
+
+}
+.web-name span{
+    /* font-size: larger; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size:20px ;
+}
+.web-name svg{
+    margin-right: 5px;
+}
+
+@media screen and (max-width:850px) {
+    *{
+        font-size: 12px;
+    }
+
+    .img-word {
+        color: #f7f7f7;
+        font-family: emoji;
+        font-size: 25px;
+        margin: 0px 20px;
+    }
+.scheme{
+    font-size: 20px;
+
+}
+
+.form-welcome{
+    font-size: 20px
+}
+.web-name span {
+    font-size: 15px;
+}
+.web-name svg{
+    width: 12px;
+}
+.web-name svg{
+    width: 12px;
+}
+}
+@media screen and (max-width:530px) {
+    *{
+        font-size: 10px;
+    }
+    .svg{
+        width: 15px;
+    }
+    form{
+        width: 80vw;
+    }
+    .input-of-form{
+        width: 35vw;
+    }
+    .img-word {
+        color: #f7f7f7;
+        font-family: emoji;
+        font-size: 18px;
+        margin: 0px 20px;
+    }
+    .scheme{
+        font-size: 15px;
+        
+    }
+    .nav a {
+        padding: 10px 10px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .nav span{
+        font-size: 25px
+    }
+    .web-name span {
+        font-size: 12px;
+    }
+    .web-name svg{
+        width: 10px;
+    }
+}

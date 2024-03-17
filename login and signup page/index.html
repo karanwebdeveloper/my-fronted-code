@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page of laxmi cheat fundt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <span>Karan.</span>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Portfolio</a>
+        <a href="#">services</a>
+    </div>
+
+    <div class="login-body">
+        <form action="">
+
+            <div class="img-box">
+
+                <span class="info">
+
+                    <span class="img-word">GET </span>
+                    <span class="img-word">EVERYTHING  </span>
+                    <span class="img-word">YOU WANT </span>
+                    <span class="scheme">EK ka double 2x</span>
+                </span>
+
+            </div>
+
+            <div class="form-start-container">
+                <div class="web-name">
+                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#141B34" stroke-width="1.5"/>
+                        <ellipse cx="12" cy="12" rx="4" ry="10" stroke="#141B34" stroke-width="1.5"/>
+                        <path d="M2 12H22" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        LAXMI CHEAT FUND</span>
+                </div>
+                <div class="form-welcome">
+                    <H3> WELCOME BACK</H3>
+                    <h4>LOGIN</h4>
+                </div>
+
+                <div class="input-of-form">
+                    <div class="name">Username</div> 
+                    <input type="text" name="username" placeholder="Email or Phone number" required class="username">
+                    <div class="name">Password</div> 
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="black" fill="white" class="svg">
+                                <path d="M2 8C2 8 6.47715 3 12 3C17.5228 3 22 8 22 8" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M21.544 13.045C21.848 13.4713 22 13.6845 22 14C22 14.3155 21.848 14.5287 21.544 14.955C20.1779 16.8706 16.6892 21 12 21C7.31078 21 3.8221 16.8706 2.45604 14.955C2.15201 14.5287 2 14.3155 2 14C2 13.6845 2.15201 13.4713 2.45604 13.045C3.8221 11.1294 7.31078 7 12 7C16.6892 7 20.1779 11.1294 21.544 13.045Z"
+                                    stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                    d="M15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 15.6569 10.3431 17 12 17C13.6569 17 15 15.6569 15 14Z"
+                                    stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                            <div class="additional-links">
+                                <a href="#">Forgot Password?</a>
+                                <span>|</span>
+                                <a href="#">Not a member? Sign Up</a>
+                            </div>
+                    </div>
+                    <input type="submit" value="Login">
+                    <button>Continue with Google <img src="assets/image/images.png" alt="" width="15"></button> 
+                    <button>Continue with Facebook <img src="assets/image/download (5).jpeg" alt="" width="15"></button> 
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var eyeIcon = document.querySelector(".toggle-password svg");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                eyeIcon.classList.remove("bi-eye");
+                eyeIcon.classList.add("bi-eye-slash");
+            } else {
+                passwordField.type = "password";
+                eyeIcon.classList.remove("bi-eye-slash");
+                eyeIcon.classList.add("bi-eye");
+            }
+        }
+    </script>
+</body>
+
+</html>
